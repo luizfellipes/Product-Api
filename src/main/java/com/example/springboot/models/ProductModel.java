@@ -1,11 +1,13 @@
 package com.example.springboot.models;
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+@Component
 @Entity
 @Table(name = "TB_PRODUCTS")
 public class ProductModel implements Serializable {
